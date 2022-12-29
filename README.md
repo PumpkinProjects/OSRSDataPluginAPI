@@ -1,7 +1,7 @@
 
 # OSRSDataPluginAPI
 
-This Project is an Old School (2007) RuneLite Plugin designed being used to manage, build, and serve metrics/data collected via a Custom RuneLite Plugin.
+This Project is an Old School (2007) RuneLite Plugin being used to manage, build, and serve metrics/data collected via a Custom RuneLite Plugin.
 
 # Stack Information
 
