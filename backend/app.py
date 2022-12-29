@@ -3,19 +3,15 @@ import os
 import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from dotenv_vault import load_dotenv
+
+load_dotenv(".env")
 
 app = FastAPI()
 
-origins = [
-    "http://localhost:5173",
-    "http://127.0.0.2:5173",
-    "https://port-5173-osrsdatapluginapi-pancakepuncher802511.codeanyapp.com",
-    "https://port-5173-osrsdatapluginapi-pancakepuncher802511.preview.codeanywhere.com"
-]
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=os.getenv("ORIGINS").split(","),
     allow_credentials=True,
     allow_methods=["GET", "POST", "HEAD", "OPTIONS"],
     allow_headers=["Content-Type","Set-Cookie"],
