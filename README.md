@@ -1,11 +1,11 @@
 
 # OSRSDataPluginAPI
 
-This Project is an Old School (2007) RuneLite Plugin being used to manage, build, and serve metrics/data collected via a Custom RuneLite Plugin.
+This Project is an [Old School RuneScape]https://oldschool.runescape.com/ [RuneLite](https://runelite.net/) Plugin being used to manage, build, and serve metrics/data collected via a Custom RuneLite Plugin.
 
 # Stack Information
 
-This project is built using Python's FastAPI and React (Vite - JavaScript + SWC). Which communicates with a MongoDB database where data is stored by a Java based plugin installed into RuneLite.
+This project is built using Python's [FastAPI](https://fastapi.tiangolo.com/) and [Vite-React](https://vitejs.dev/). Which communicates with a [MongoDB](https://www.mongodb.com/home) database where data is stored by a Java based plugin installed into RuneLite.
 
 ### Recommended Minimum Requirements
 All current as of 12/29/2022
