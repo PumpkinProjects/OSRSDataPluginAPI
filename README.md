@@ -1,7 +1,7 @@
 
 # OSRSDataPluginAPI
 
-This Project is an [Old School RuneScape](https://oldschool.runescape.com/) [RuneLite](https://runelite.net/) Plugin being used to manage, build, and serve metrics/data collected via a Custom RuneLite Plugin.
+This Project is the API and web-interface for a [RuneLite](https://runelite.net/) plugin designed to capture user metrics and data for [Old School RuneScape](https://oldschool.runescape.com/). This project uses said metrics and data collected (E.g. PvE Stats, PvE Drops, Skilling Experience Gains, etc.) and allows users to visualize the history of their account through the lens of a data driven perspective.
 
 # Stack Information
 
@@ -21,6 +21,10 @@ All current as of 12/29/2022
 **Can I clone and host this application?**
 
 As this project exist in the MIT space you're free to clone and attempt to use this project. Obviously without several key pieces outside of this project running it will be a challenge. If you really wish to use this project and want help please do not hesitate to ask any members for assistance.
+
+**Do you track sensitive information like usernames or passwords?**
+
+Definitely not! The goal of this project upfront is to anonymously capture user data in regards to only already publicly avalaible details on Old School Runescapes Highscore page. Unless users specifically opt into linking their details to their anonymous identified provided by the plugin our system and anyone else will never be able to know whos data is whos. Even when users opt in to claim their anonymous identified it's strongly encouraged to make their credentials something unrelated to their runescape account. Privacy and security is extremely important to this project!
 
 ## License
 
