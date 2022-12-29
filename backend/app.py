@@ -29,7 +29,7 @@ async def root():
 
 # This if statement is the entry point for the application.
 # I add this to all my application entry point files.
-# It's not entirely necesssary, but it's a easy and safe way to execute special code when this script runs.
+# It's not entirely necesssary, but it's an easy and safe way to execute special code when this script runs.
 # It also just serves as an indicator of where the script starts.
 if __name__ == "__main__":
 
@@ -40,7 +40,7 @@ if __name__ == "__main__":
     elif platform.system() == "Linux":
         ip = "0.0.0.0"
     
-    # Runs FastAPI App using Uvicorn ASGI on the specified localhost, port, and allows the CLI to reload when code changes.
+    # Runs FastAPI App using Uvicorn ASGI on the specified localhost, port, and allows the application to reload in realtime when code changes.
     uvicorn.run("app:app",
             host=ip,
             port=8000,
