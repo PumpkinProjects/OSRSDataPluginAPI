@@ -8,7 +8,7 @@ from dotenv_vault import load_dotenv
 # Loads a .env file for enviroment variables.
 load_dotenv(".env")
 
-# Instantiates an object named app of type FastAPI(). This is an essentially object for FastAPI to work.
+# Instantiates an object named app of type FastAPI(). This is an essential object for FastAPI to work.
 app = FastAPI()
 
 # Specifies that the FastAPI will be using a middleware. Default is CORS.
@@ -33,12 +33,12 @@ async def root():
 # It also just serves as an indicator of where the script starts.
 if __name__ == "__main__":
 
-    # Checks what Oporating System you are on to determine which localhost to use for hosting.
+    # Checks what Operating System you are on to determine which localhost to use for hosting.
     # This is primarily for the devolopment build when working between windows or linux.
-    if platform.system() == "Windows":
-        ip = "127.0.0.1"
-    elif platform.system() == "Linux":
+    if platform.system() == "Linux":
         ip = "0.0.0.0"
+    else:
+        ip = "127.0.0.1"
     
     # Runs FastAPI App using Uvicorn ASGI on the specified localhost, port, and allows the application to reload in realtime when code changes.
     uvicorn.run("app:app",

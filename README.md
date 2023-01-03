@@ -24,7 +24,7 @@ As this project exist in the MIT space you're free to clone and attempt to use t
 
 **Do you track sensitive information like usernames or passwords?**
 
-Definitely not! The goal of this project upfront is to anonymously capture user data in regards to only already publicly avalaible details on Old School Runescapes Highscore page. Unless users specifically opt into linking their details to their anonymous identified provided by the plugin our system and anyone else will never be able to know whos data is whos. Even when users opt in to claim their anonymous identified it's strongly encouraged to make their credentials something unrelated to their runescape account. Privacy and security is extremely important to this project!
+Definitely not! The goal of this project upfront is to anonymously capture user data in regards to only already publicly avalaible details on Old School Runescapes Highscore page. Unless users specifically opt into linking their details to their anonymous identifier provided by the plugin our system or other users will not be able to know what player data sets belong too. Even when users opt in to claim their anonymous identifier it's strongly encouraged to make their credentials something unrelated to their OSRS account. We take privacy and security very serious.
 
 ## License
 
