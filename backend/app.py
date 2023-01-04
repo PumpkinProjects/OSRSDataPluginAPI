@@ -4,6 +4,7 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv_vault import load_dotenv
+from routes.plugin_init import init_route
 
 # Loads a .env file for enviroment variables.
 load_dotenv(".env")
@@ -19,6 +20,8 @@ app.add_middleware(
     allow_methods=["GET", "POST", "HEAD", "OPTIONS"],
     allow_headers=["Content-Type","Set-Cookie"],
 )
+
+app.include_router(init_route.router)
 
 # This is a basic route to capture API traffic on the "/" or root endpoint.
 # Currently defaulted for testing purposes.
