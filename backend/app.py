@@ -5,6 +5,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv_vault import load_dotenv
 from routes.plugin_init import init_route
+from routes.data_routes import recieve
 
 # Loads a .env file for enviroment variables.
 load_dotenv(".env")
@@ -22,6 +23,7 @@ app.add_middleware(
 )
 
 app.include_router(init_route.router)
+app.include_router(recieve.router)
 
 # This is a basic route to capture API traffic on the "/" or root endpoint.
 # Currently defaulted for testing purposes.
